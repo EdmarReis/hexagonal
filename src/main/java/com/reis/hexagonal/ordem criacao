@@ -1,0 +1,21 @@
+application/core/domain - class Customer
+application/core/domain - class Address
+application/core/usacase - class InsertCustomerUseCase
+application/ports/out - Interface FindAddressByZipCodeOutputPort
+application/ports/out - Interface InsertCustomerOutputPort
+adapters/out/client - Interface FindAddressByZipcodeClient
+adapters/out/client/response - class AddressResponse
+adapters/out - class FindAddressByZipCodeAdapter
+adapters/out/client/mapper - Interface AddressResponseMapper
+adapters/out/repository/entity - class CustomerEntity
+adapters/out/repository/entity - class AddressEntity
+adapters/out/repository - Interface CustomerRepository
+adapters/out - class InsertCustomerAdapter
+adapters/out/repository/mapper - Interface CustomerEntityMapper
+adapters/in/controller - class CustomerController
+adapters/in/controller/request - class CustomerRequest
+application/ports/in - interface InsertCustomerInputPort
+adapters/in/controller/mapper - Interface CustomerMapper
+application/core/usecase - FindCustomerByIdUseCase
+application/ports/out - FindCustomerByIdOutputPort
+adapters/out - FindCustomerByIdAdapter
